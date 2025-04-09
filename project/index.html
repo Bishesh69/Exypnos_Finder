@@ -1,16 +1,14 @@
-<!-- Main HTML file for ExypnosFinder -->
 
-<!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character set and viewport settings -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page title and description for SEO -->
+
     <title>ExypnosFinder - UK Electric Vehicle Charging Solutions</title>
     <meta name="description" content="Find EV charging stations across the UK and learn about electric vehicle adoption">
-    <!-- Linking external CSS stylesheets for styling -->
+
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/navigation.css">
     <link rel="stylesheet" href="./styles/hero.css">
@@ -21,22 +19,21 @@
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/ev-facts.css">
 
-    <!-- Google Maps API script for map functionality -->
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhSFKQknGtQgOADhBHdvKKl6JZkvY3_Wo"></script>
 </head>
 <body>
-    <!-- Header section containing navigation menu -->
+
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <!-- SVG logo for ExypnosFinder -->
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z" fill="#0066cc"/>
                     <path d="M24 10l-8 10h6l-2 10 8-10h-6l2-10z" fill="#0066cc"/>
                 </svg>
                 <span>ExypnosFinder</span>
             </div>
-            <!-- Navigation links for different sections of the page -->
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#charging-map">Find Chargers</a></li>
@@ -45,7 +42,7 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="./signin.html">Sign In</a></li>
             </ul>
-            <!-- Mobile menu button for responsive design -->
+
             <button class="mobile-menu" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -55,7 +52,7 @@
     </header>
 
     <main>
-        <!-- Hero section with video background and call-to-action button -->
+
         <section id="home" class="hero">
             <div class="video-background">
                 <video id="hero-video" autoplay muted loop>
@@ -65,7 +62,7 @@
                 <div class="video-overlay"></div>
             </div>
             <div class="video-controls">
-                <!-- Video control buttons for play/pause, mute/unmute, and fullscreen -->
+
                 <button id="play-pause-btn" aria-label="Play/Pause">
                     <svg viewBox="0 0 24 24">
                         <path d="M6 4l12 8-12 8V4z"></path>
@@ -89,15 +86,15 @@
             </div>
         </section>
 
-        <!-- Map section displaying charging stations -->
+
         <section id="charging-map" class="map-section">
             <h2>Charging Stations Map</h2>
             <div id="map" class="map-container">
-                <!-- Map will be inserted here via JavaScript -->
+
             </div>
         </section>
 
-        <!-- Benefits section highlighting advantages of electric vehicles -->
+
         <section id="benefits" class="benefits-section">
             <h2>Why Choose Electric?</h2>
             <div class="benefits-grid">
@@ -128,15 +125,15 @@
             </div>
         </section>
 
-        <!-- Calculator section for estimating EV costs -->
+
         <section id="calculator" class="calculator-section">
             <h2>EV Cost Calculator</h2>
             <div class="calculator-container">
-                <!-- Calculator will be implemented via JavaScript -->
+
             </div>
         </section>
 
-        <!-- About section providing information about ExypnosFinder -->
+
         <section id="about" class="about-section">
             <h2>About ExypnosFinder</h2>
             <div class="about-container">
@@ -153,19 +150,19 @@
             </div>
         </section>
 
-        <!-- EV Facts section displaying random facts about electric vehicles -->
+
         <section id="ev-facts" class="ev-facts-section">
             <h2>EV Facts</h2>
             <div class="ev-fact-container">
                 <div class="ev-fact-icon">💡</div>
                 <p id="ev-fact-text" class="ev-fact-text">
-                    <!-- Random fact will be inserted here via JavaScript -->
+
                 </p>
             </div>
         </section>
     </main>
 
-    <!-- Footer section with contact information and quick links -->
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -193,7 +190,7 @@
         </div>
     </footer>
 
-    <!-- Main JavaScript file for initializing components -->
+
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>
