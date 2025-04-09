@@ -1,0 +1,135 @@
+/* EV Facts section styles for ExypnosFinder */
+
+.ev-facts-section {
+    padding: 6rem 1rem;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fd 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.ev-facts-section h2 {
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.ev-facts-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #0066cc;
+    border-radius: 2px;
+}
+
+.ev-fact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 0.98) 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 102, 204, 0.15);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 1px solid rgba(0, 102, 204, 0.08);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.ev-fact-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 102, 204, 0.25);
+    border-color: rgba(0, 102, 204, 0.15);
+}
+
+.ev-fact-icon {
+    font-size: 2.5rem;
+    color: #0066cc;
+    margin-bottom: 1.5rem;
+}
+
+.ev-fact-text {
+    font-size: 1.35rem;
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ev-fact-text:before,
+.ev-fact-text:after {
+    content: '"';
+    font-size: 3rem;
+    color: #0066cc;
+    position: absolute;
+    opacity: 0.2;
+    transition: all 0.3s ease;
+}
+
+.ev-fact-container:hover .ev-fact-text:before,
+.ev-fact-container:hover .ev-fact-text:after {
+    opacity: 0.4;
+    transform: scale(1.1);
+}
+
+.ev-fact-text:before {
+    left: 0;
+    top: -10px;
+}
+
+.ev-fact-text:after {
+    right: 0;
+    bottom: -10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .ev-facts-section {
+        padding: 4rem 1rem;
+    }
+    
+    .ev-facts-section h2 {
+        font-size: 2rem;
+    }
+    
+    .ev-fact-container {
+        padding: 2rem;
+    }
+    
+    .ev-fact-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ev-facts-section {
+        padding: 3rem 1rem;
+    }
+    
+    .ev-fact-container {
+        padding: 1.5rem;
+    }
+    
+    .ev-fact-text {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}

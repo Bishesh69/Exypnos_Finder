@@ -1,0 +1,199 @@
+<!-- Main HTML file for ExypnosFinder -->
+
+<!-- HTML5 doctype declaration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title and description for SEO -->
+    <title>ExypnosFinder - UK Electric Vehicle Charging Solutions</title>
+    <meta name="description" content="Find EV charging stations across the UK and learn about electric vehicle adoption">
+    <!-- Linking external CSS stylesheets for styling -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/map.css">
+    <link rel="stylesheet" href="./styles/benefits.css">
+    <link rel="stylesheet" href="./styles/calculator.css">
+    <link rel="stylesheet" href="./styles/video-background.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/ev-facts.css">
+
+    <!-- Google Maps API script for map functionality -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhSFKQknGtQgOADhBHdvKKl6JZkvY3_Wo"></script>
+</head>
+<body>
+    <!-- Header section containing navigation menu -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <!-- SVG logo for ExypnosFinder -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z" fill="#0066cc"/>
+                    <path d="M24 10l-8 10h6l-2 10 8-10h-6l2-10z" fill="#0066cc"/>
+                </svg>
+                <span>ExypnosFinder</span>
+            </div>
+            <!-- Navigation links for different sections of the page -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#charging-map">Find Chargers</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#calculator">Cost Calculator</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="./signin.html">Sign In</a></li>
+            </ul>
+            <!-- Mobile menu button for responsive design -->
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section with video background and call-to-action button -->
+        <section id="home" class="hero">
+            <div class="video-background">
+                <video id="hero-video" autoplay muted loop>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="video-controls">
+                <!-- Video control buttons for play/pause, mute/unmute, and fullscreen -->
+                <button id="play-pause-btn" aria-label="Play/Pause">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 4l12 8-12 8V4z"></path>
+                    </svg>
+                </button>
+                <button id="mute-btn" aria-label="Mute/Unmute">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+                    </svg>
+                </button>
+                <button id="fullscreen-btn" aria-label="Fullscreen">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hero-content">
+                <h1>Find Your Perfect EV Charging Station</h1>
+                <p>Discover thousands of charging points across the UK</p>
+                <button class="cta-button">Find Nearest Charger</button>
+            </div>
+        </section>
+
+        <!-- Map section displaying charging stations -->
+        <section id="charging-map" class="map-section">
+            <h2>Charging Stations Map</h2>
+            <div id="map" class="map-container">
+                <!-- Map will be inserted here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Benefits section highlighting advantages of electric vehicles -->
+        <section id="benefits" class="benefits-section">
+            <h2>Why Choose Electric?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Environmental Impact</h3>
+                    <p>Reduce your carbon footprint and contribute to a cleaner future</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Cost Savings</h3>
+                    <p>Save money on fuel and maintenance costs</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Government Incentives</h3>
+                    <p>Take advantage of tax benefits and grants</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Performance</h3>
+                    <p>Experience instant torque and smooth driving</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Growing Infrastructure</h3>
+                    <p>Access to an expanding network of charging stations across the UK</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Technology Advancements</h3>
+                    <p>Benefit from cutting-edge features and continuous innovation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator section for estimating EV costs -->
+        <section id="calculator" class="calculator-section">
+            <h2>EV Cost Calculator</h2>
+            <div class="calculator-container">
+                <!-- Calculator will be implemented via JavaScript -->
+            </div>
+        </section>
+
+        <!-- About section providing information about ExypnosFinder -->
+        <section id="about" class="about-section">
+            <h2>About ExypnosFinder</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>Our Mission</h3>
+                    <p>At ExypnosFinder, we're dedicated to accelerating the UK's transition to electric vehicles by providing reliable, up-to-date information about charging infrastructure across the country.</p>
+                    
+                    <h3>What We Do</h3>
+                    <p>We help EV owners and prospective buyers locate charging stations, calculate costs, and understand the benefits of electric vehicle adoption.</p>
+                    
+                    <h3>Our Team</h3>
+                    <p>Our team of EV enthusiasts and tech experts is committed to creating the most user-friendly and comprehensive EV charging resource in the UK.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EV Facts section displaying random facts about electric vehicles -->
+        <section id="ev-facts" class="ev-facts-section">
+            <h2>EV Facts</h2>
+            <div class="ev-fact-container">
+                <div class="ev-fact-icon">💡</div>
+                <p id="ev-fact-text" class="ev-fact-text">
+                    <!-- Random fact will be inserted here via JavaScript -->
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with contact information and quick links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ExypnosFinder</h3>
+                <p>Your trusted source for EV charging information in the UK</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#charging-map">Find Chargers</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@exypnosfinder.com</p>
+                <p>Phone: +44 (0)20 1234 5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ExypnosFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript file for initializing components -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

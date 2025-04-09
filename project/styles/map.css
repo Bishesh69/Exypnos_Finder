@@ -1,0 +1,125 @@
+
+
+.map-section {
+    padding: 6rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f0f5fa 0%, #e6f0fd 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.map-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230066cc' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.map-section h2 {
+    margin-bottom: 2.5rem;
+    color: #1a1a1a;
+    font-size: 2.8rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    letter-spacing: -0.5px;
+    z-index: 1;
+}
+
+.map-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #0066cc;
+    border-radius: 2px;
+}
+
+.map-container {
+    height: 550px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 102, 204, 0.15);
+    background-color: #f5f5f5;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 1px solid rgba(0, 102, 204, 0.08);
+    animation: fadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    position: relative;
+    z-index: 1;
+}
+
+
+.map-container:hover {
+    box-shadow: 0 25px 60px rgba(0, 102, 204, 0.25);
+    transform: translateY(-8px);
+    border-color: rgba(0, 102, 204, 0.15);
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: 4rem 1rem;
+    }
+    
+    .map-section h2 {
+        font-size: 2rem;
+    }
+    
+    .map-container {
+        height: 450px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-section {
+        padding: 3rem 1rem;
+    }
+    
+    .map-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .map-container {
+        height: 350px;
+        border-radius: 12px;
+    }
+}
+
+
+#map-loading {
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+    animation: pulse 1.5s infinite ease-in-out;
+    font-size: 1.1rem;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; transform: scale(0.98); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.7; transform: scale(0.98); }
+}

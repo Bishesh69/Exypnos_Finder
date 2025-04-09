@@ -1,0 +1,139 @@
+<!-- Sign In page for ExypnosFinder -->
+
+<!-- HTML5 doctype declaration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title and description for SEO -->
+    <title>Sign In - ExypnosFinder</title>
+    <meta name="description" content="Sign in to your ExypnosFinder account for personalized EV charging solutions">
+    <!-- Linking external CSS stylesheets for styling -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body>
+    <!-- Header section containing navigation menu -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <!-- SVG logo for ExypnosFinder -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z" fill="#0066cc"/>
+                    <path d="M24 10l-8 10h6l-2 10 8-10h-6l2-10z" fill="#0066cc"/>
+                </svg>
+                <span>ExypnosFinder</span>
+            </div>
+            <!-- Navigation links for different sections of the page -->
+            <ul class="nav-links">
+                <li><a href="./index.html#home">Home</a></li>
+                <li><a href="./index.html#charging-map">Find Chargers</a></li>
+                <li><a href="./index.html#benefits">Benefits</a></li>
+                <li><a href="./index.html#calculator">Cost Calculator</a></li>
+                <li><a href="./index.html#about">About Us</a></li>
+                <li><a href="./signin.html">Sign In</a></li>
+            </ul>
+            <!-- Mobile menu button for responsive design -->
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sign In section with login form -->
+        <section id="signin" class="signup-section">
+            <h2>Sign In to Your Account</h2>
+            <div class="signup-container">
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="signup-button">Sign In</button>
+                </form>
+                <div class="signin-link">
+                    Don't have an account? <a href="./signup.html">Sign Up</a>
+                </div>
+                
+                <!-- Website Information Table -->
+                <div class="website-info">
+                    <h3>Why Join ExypnosFinder?</h3>
+                    <table class="info-table">
+                        <tr>
+                            <th>Benefit</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Personalized Experience</td>
+                            <td>Save your favorite charging locations and preferences</td>
+                        </tr>
+                        <tr>
+                            <td>Trip Planning</td>
+                            <td>Plan your journey with optimal charging stops</td>
+                        </tr>
+                        <tr>
+                            <td>Usage History</td>
+                            <td>Track your charging history and expenses</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive Content</td>
+                            <td>Access to guides, tips, and EV ownership resources</td>
+                        </tr>
+                        <tr>
+                            <td>Community Access</td>
+                            <td>Connect with other EV owners and share experiences</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with contact information and quick links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ExypnosFinder</h3>
+                <p>Your trusted source for EV charging information in the UK</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html#home">Home</a></li>
+                    <li><a href="./index.html#charging-map">Find Chargers</a></li>
+                    <li><a href="./index.html#benefits">Benefits</a></li>
+                    <li><a href="./index.html#calculator">Calculator</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@exypnosfinder.com</p>
+                <p>Phone: +44 (0)20 1234 5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ExypnosFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for navigation functionality -->
+    <script type="module">
+        import { initNavigation } from './js/navigation.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            initNavigation();
+        });
+    </script>
+</body>
+</html>
