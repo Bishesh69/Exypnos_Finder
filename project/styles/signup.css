@@ -1,4 +1,4 @@
-/* Sign Up section styles for ExypnosFinder */
+
 
 .signup-section {
     padding: 8rem 1rem 6rem 1rem;
@@ -305,7 +305,7 @@
     }
 }
 
-/* Animation keyframes */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
