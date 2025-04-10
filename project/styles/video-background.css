@@ -1,4 +1,4 @@
-/* Video background styles for ExypnosFinder */
+
 
 .video-background {
     position: absolute;
@@ -71,7 +71,7 @@
     transform: scale(1.1);
 }
 
-/* Overlay to ensure text is readable over video */
+
 .video-overlay {
     position: absolute;
     top: 0;
@@ -82,7 +82,7 @@
     z-index: 1;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .video-controls {
         bottom: 15px;
