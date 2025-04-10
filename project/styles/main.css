@@ -1,6 +1,4 @@
-/* Main CSS file for ExypnosFinder */
 
-/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +80,7 @@ ul {
     overflow: hidden;
 }
 
-/* Button styles */
+
 .cta-button {
     display: inline-block;
     background-color: #0066cc;
@@ -136,7 +134,7 @@ section h2:after {
     border-radius: 3px;
 }
 
-/* Footer styles */
+
 .footer {
     background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
     color: #fff;
@@ -264,7 +262,7 @@ section h2:after {
     }
 }
 
-/* Responsive styles */
+
 @media (max-width: 1024px) {
     .nav-container {
         padding: 1rem 3%;
@@ -366,7 +364,7 @@ section h2:after {
     background-color: #eee;
 }
 
-/* Benefits section */
+
 .benefits-section {
     padding: 4rem 1rem;
     background-color: #f8f9fa;
@@ -403,7 +401,7 @@ section h2:after {
     color: #0066cc;
 }
 
-/* Calculator section */
+
 .calculator-section {
     padding: 4rem 1rem;
     text-align: center;
@@ -423,8 +421,6 @@ section h2:after {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
-/* Footer */
 .footer {
     background-color: #333;
     color: #fff;
@@ -468,7 +464,7 @@ section h2:after {
     font-size: 0.9rem;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
