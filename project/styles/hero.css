@@ -1,4 +1,4 @@
-/* Hero section styles for ExypnosFinder */
+
 
 .hero {
     background: #000;
@@ -11,14 +11,14 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 80px; /* Add padding to account for fixed header */
+    padding-top: 80px; 
 }
 
 .hero-content {
     max-width: 800px;
     position: relative;
     z-index: 2;
-    padding: 0 20px; /* Add horizontal padding for small screens */
+    padding: 0 20px; 
     animation: fadeInUp 1.2s ease-out;
 }
 
@@ -83,7 +83,7 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 70px; /* Slightly less padding on mobile */
+        padding-top: 70px; 
     }
     
     .hero h1 {
@@ -102,7 +102,7 @@
 
 @media (max-width: 480px) {
     .hero {
-        padding-top: 60px; /* Even less padding on very small screens */
+        padding-top: 60px; 
     }
     
     .hero h1 {
