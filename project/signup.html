@@ -1,33 +1,31 @@
-<!-- Sign Up page for ExypnosFinder -->
 
-<!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character set and viewport settings -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page title and description for SEO -->
+
     <title>Sign Up - ExypnosFinder</title>
     <meta name="description" content="Create an account to access personalized EV charging solutions">
-    <!-- Linking external CSS stylesheets for styling -->
+
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/navigation.css">
     <link rel="stylesheet" href="./styles/signup.css">
 </head>
 <body>
-    <!-- Header section containing navigation menu -->
+
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <!-- SVG logo for ExypnosFinder -->
+
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 36c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16-7.163 16-16 16z" fill="#0066cc"/>
                     <path d="M24 10l-8 10h6l-2 10 8-10h-6l2-10z" fill="#0066cc"/>
                 </svg>
                 <span>ExypnosFinder</span>
             </div>
-            <!-- Navigation links for different sections of the page -->
+
             <ul class="nav-links">
                 <li><a href="./index.html#home">Home</a></li>
                 <li><a href="./index.html#charging-map">Find Chargers</a></li>
@@ -36,7 +34,7 @@
                 <li><a href="./index.html#about">About Us</a></li>
                 <li><a href="./signin.html">Sign In</a></li>
             </ul>
-            <!-- Mobile menu button for responsive design -->
+
             <button class="mobile-menu" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -46,7 +44,7 @@
     </header>
 
     <main>
-        <!-- Sign Up section with registration form -->
+
         <section id="signup" class="signup-section">
             <h2>Create Your Account</h2>
             <div class="signup-container">
@@ -73,7 +71,7 @@
                     Already have an account? <a href="./signin.html">Sign In</a>
                 </div>
                 
-                <!-- Website Information Table -->
+
                 <div class="website-info">
                     <h3>ExypnosFinder at a Glance</h3>
                     <table class="info-table">
@@ -107,7 +105,6 @@
         </section>
     </main>
 
-    <!-- Footer section with contact information and quick links -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -136,7 +133,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript for navigation functionality -->
+
     <script type="module">
         import { initNavigation } from './js/navigation.js';
         document.addEventListener('DOMContentLoaded', () => {
