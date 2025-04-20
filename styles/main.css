@@ -1,0 +1,488 @@
+/* Main CSS file for ExypnosFinder */
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.7;
+    color: #2c3e50;
+    background-color: #f8fafc;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.1px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+a:hover {
+    color: #0055aa;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.mobile-menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 8rem 1rem 5rem;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Button styles */
+.cta-button {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #0055aa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+}
+
+/* Section styles */
+section {
+    padding: 5rem 1rem;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #0066cc;
+    border-radius: 3px;
+}
+
+/* Footer styles */
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #fff;
+    padding: 4rem 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0066cc, #00aaff);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer-section h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.footer-section:hover h3:after {
+    width: 60px;
+}
+
+.footer-section ul {
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-section li:hover {
+    transform: translateX(5px);
+}
+
+.footer-section a {
+    color: #ccc;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: #0066cc;
+}
+
+.footer-section p {
+    color: #aaa;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 1rem 1.5rem;
+    }
+    
+    .footer-content {
+        gap: 2rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section h3:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-section li:hover {
+        transform: none;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 1rem 3%;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0.8rem 4%;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0055aa;
+}
+
+/* Map section */
+.map-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.map-section h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.map-container {
+    height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+}
+
+/* Benefits section */
+.benefits-section {
+    padding: 4rem 1rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    margin-bottom: 1rem;
+    color: #0066cc;
+}
+
+/* Calculator section */
+.calculator-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.calculator-section h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.calculator-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem 1rem 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
